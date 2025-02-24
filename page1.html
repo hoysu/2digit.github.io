@@ -66,29 +66,26 @@ title: "The Exchange Model"
 <p>The DPO technique was applied by having the AI generate multiple prediction scenarios, which were then evaluated and feedback provided by financial experts. This process not only increased the reliability of the predictions but also <strong>encouraged the model to prioritize providing more interpretable analysis results</strong>. This allowed users to make better decisions based not only on numerical predictions but also on the interpretations and analyses provided by the model.</p>
 
 <h3>Differences Between Exchange & Exchange-Price</h3>
-<table>
-  <thead>
+<table border="1">
     <tr>
-      <th>Model</th>
-      <th>Key Features</th>
-      <th>Training Data</th>
-      <th>Application Method</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Exchange</td>
-      <td>Market analysis + exchange rate prediction</td>
-      <td>Exchange rate time-series data, key economic indicator time-series data, financial news</td>
-      <td>Analysis reports (explaining correlations between specific indicators and exchange rates, analyzing the potential impact of major news on exchange rate fluctuations, short-term exchange rate trend forecasts, etc.), exchange rate prediction for major currencies</td>
+        <th>Model</th>
+        <th>Key Features</th>
+        <th>Training Data</th>
+        <th>Application Method</th>
     </tr>
     <tr>
-      <td>Exchange-Price</td>
-      <td>Specialized in exchange rate prediction</td>
-      <td>Exchange rate time-series data, key economic indicator time-series data, financial news</td>
-      <td>Exchange rate prediction for major currencies</td>
+        <td>Exchange</td>
+        <td>Market analysis + exchange rate prediction</td>
+        <td>Exchange rate time-series data, key economic indicator time-series data, financial news</td>
+        <td>Analysis reports (explaining correlations between specific indicators and exchange rates, analyzing the potential impact of major news on exchange rate fluctuations, short-term exchange rate trend forecasts, etc.), exchange rate prediction for major currencies</td>
+        Exchange rate prediction for major currencies</td>
     </tr>
-  </tbody>
+    <tr>
+        <td>Exchange-Price</td>
+        <td>Specialized in exchange rate prediction</td>
+        <td>Exchange rate time-series data, key economic indicator time-series data, financial news</td>
+        <td>Exchange rate prediction for major currencies</td>
+    </tr>
 </table>
 
 <h2>Evaluation Metrics</h2>
@@ -107,8 +104,7 @@ title: "The Exchange Model"
   <li><b>USD MAPE(high, low)</b> represents the average MAPE value for January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
   <li>The individual date columns contain the MAPE values calculated for each specific date, and the final <b>USD MAPE(high, low)</b> value is derived by averaging these values.</li>
 </ul>
-<table>
-  <thead>
+<table border="1">
     <tr>
       <th>Rank</th>
       <th>Site</th>
@@ -133,9 +129,7 @@ title: "The Exchange Model"
       <th>1/24</th>
       <th>1/31</th>
     </tr>
-  </thead>
-  <tbody>
-    <tr>
+      <tr>
       <td>1</td>
       <td>KEB Hana Bank</td>
       <td>09-26</td>
@@ -279,10 +273,6 @@ title: "The Exchange Model"
       <td>0.44</td>
       <td>0.26</td>
       <td>0.14</td>
-      <td>0.48</td>
-      <td>0.10</td>
-      <td>0.16</td>
-      <td>0.42</td>
     </tr>
     <tr>
       <td>6</td>
@@ -332,13 +322,13 @@ title: "The Exchange Model"
       <td>0.12</td>
       <td>0.44</td>
     </tr>
-  </tbody>
 </table>
 
 <h4>Global Currencies</h4>
 <p>The global currency ranking was determined by calculating the MAPE (Mean Absolute Percentage Error) for the exchange rate predictions of EUR (Euro) and JPY (Japanese Yen), excluding USD.</p>
 <p>However, there were challenges in calculating the global currency rankings. Among the existing banks, only one provided exchange rate predictions for global currencies based on KRW (South Korean Won), while most banks either did not provide predictions for global currencies or only provided exchange rate predictions based on USD. This made it difficult to calculate the MAPE for global currencies.</p>
 <p>To address this issue and evaluate KRW-based exchange rate predictions, a method was applied where the exchange rates were converted based on the previous trading day's closing price, and the collected prediction values were compared. The following formula was used for the exchange rate conversion.</p>
+
 <pre>
 EUR/USD => 1 EUR per USD (prediction unit provided by the bank)  
 USD/JPY => 1 USD per JPY (prediction unit provided by the bank)  
@@ -348,21 +338,14 @@ USD/KRW => Previous day's closing price (actual exchange rate)
 2. (KRW / USD) / (JPY / USD) = KRW / JPY = (1 JPY per KRW)
 </pre>
 
-<p>
-    <strong>Rank</strong> indicates the prediction accuracy ranking of each <strong>Site</strong> (bank or financial institution) based on the MAPE value.  
-</p>
-<p>
-    <strong>Site</strong> lists the names of various banks and financial institutions that provide exchange rate predictions.  
-</p>
-<p>
-    <strong>Time</strong> represents the period during which the predictions were made and serves as the evaluation criterion for exchange rate predictions during that period.  
-</p>
-<p>
-    <strong>EUR MAPE (high, low)</strong> represents the average MAPE value for EUR (Euro) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.  
-</p>
-<p>
-    <strong>JPY MAPE (high, low)</strong> represents the average MAPE value for JPY (Japanese Yen) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.  
-</p>
+<ul>
+  <li><b>Rank</b> indicates the prediction accuracy ranking of each <strong>Site</strong> (bank or financial institution) based on the MAPE value.</li>
+  <li><b>Site</b> lists the names of various banks and financial institutions that provide exchange rate predictions.</li>
+  <li><b>Time</b> represents the period during which the predictions were made and serves as the evaluation criterion for exchange rate predictions during that period.</li>
+  <li><b>EUR MAPE (high, low)</b> represents the average MAPE value for EUR (Euro) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
+  <li><b>JPY MAPE (high, low)</b> represents the average MAPE value for JPY (Japanese Yen) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
+</ul>
+
 <table border="1">
     <tr>
         <th>Rank</th>
@@ -481,10 +464,6 @@ USD/KRW => Previous day's closing price (actual exchange rate)
         <td>0.47</td>
         <td>0.20</td>
         <td>0.15</td>
-        <td>0.66</td>
-        <td>0.15</td>
-        <td>0.11</td>
-        <td>0.50</td>
     </tr>
     <tr>
         <td>Exchange-Price</td>
@@ -511,18 +490,37 @@ USD/KRW => Previous day's closing price (actual exchange rate)
     </tr>
 </table>
 
+<h3>Robustness Evaluation</h3>
+<p>Robustness evaluation is the process of verifying whether a system or model operates reliably in the face of various environmental changes or exceptional situations. It tests whether the developed model can maintain performance without being affected by data uncertainties, noise, errors, or unexpected changes.</p>
+<p>To evaluate the robustness of the Exchange and Exchange-Price models, various data transformation methods were applied to the exchange rate predictions in January 2025. By analyzing how MAPE (Mean Absolute Percentage Error) changes depending on the input data transformation methods, the robustness of the models was assessed.</p>
+<ul>
+  <li><b>Task</b> Represents the applied input data transformation methods. The impact of data transformation on exchange rate prediction performance was analyzed using three methods.</li>
+  <li><b>MAPE(high, low)</b> Represents the average MAPE for high and low predictions.</li>
+  <li><b>MAPE(high, low, close)</b> Represents the average MAPE for high, low, and close predictions.</li>
+  <li><b>high</b> MAPE for high predictions.</li>
+  <li><b>low</b> MAPE for low predictions.</li>
+  <li><b>close</b> MAPE for close predictions.</li>
+</ul>
+<h4>USD Currency</h4>
+<h4>EUR Currency</h4>
+<h4>JPY Currency</h4>
 
+<h3>Usage</h3>
+<p>The following explains what data is used by the Exchange and Exchange-Price models, and the flow of execution.
+When the prompt, exchange rate data, key forex market-related data, and summarized daily forex market and global economic news are input into the models, the Exchange model outputs a report that includes market analysis explanations and exchange rate predictions, while the Exchange-Price model outputs the exchange rate prediction results. Below, you can see the actual output results from the models.</p>
 
+<h4>Exchange Model</h4>
+<h4>Exchange-Price Model</h4>
 
+<h3>Conclusion</h3>
+<p>The Exchange and Exchange-Price models, built on the generative AI model Llama 3.1 8B, would bring a highly innovative introduction of Generative AI to the financial market if applied to the real-world financial industry. Since the models use integrated time-series datasets during training, it maximizes the efficiency of model training and inference, enabling fast learning and achieving the following effects:</p>
+<p>Unlike traditional services that rely on past experiences and are limited in volatile environments, the LLM-based AI forex trader can analyze vast global data in real-time with high data analysis capabilities and make precise predictions. Furthermore, it provides user-friendly financial services by explaining predictions in a way that even non-experts can easily understand.</p>
+<p>Being an AI-based service rather than human-based, it can be automated and operated 24/7, providing financial information whenever users need it, anywhere. The model can quickly adapt to market volatility by learning various patterns and swiftly capturing changes in real-time data regarding exchange rate fluctuations through multiple leading indicators.</p>
+<p>The model has also demonstrated performance that surpasses traditional human-based predictions in evaluation metrics, making the Exchange and Exchange-Price models highly applicable and valuable.</p>
 
-
-<h2>Usage Application Form</h2>
-<p> To use this model, please complete the application form and submit it via email.
-Access will be granted after your application is reviewed and approved.
-We appreciate your cooperation and look forward to assisting you.
-</p>
-
-<h2>Usage</h2>
-<p>As the model continues to evolve, future versions will integrate more sophisticated features, such as sentiment analysis from social media and news articles, to further enhance its predictive capabilities. Additionally, it will incorporate more granular data, such as microeconomic factors and real-time market events, to improve the accuracy of its forecasts.</p>
+<h3>References</h3>
+<p>[1] meta-llama/Llama-3.1-8B(Model): https://huggingface.co/meta-llama/Llama-3.1-8B</p>
+<p>[2] davidkim205/exchange(Model): https://huggingface.co/davidkim205/exchange</p>
+<p>[3] davidkim205/exchange-price(Model): https://huggingface.co/davidkim205/exchange-price</p>
 
 <a href="index.html">이전</a>
