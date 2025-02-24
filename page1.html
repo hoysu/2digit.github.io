@@ -66,6 +66,7 @@ title: "The Exchange Model"
 <p>The DPO technique was applied by having the AI generate multiple prediction scenarios, which were then evaluated and feedback provided by financial experts. This process not only increased the reliability of the predictions but also <strong>encouraged the model to prioritize providing more interpretable analysis results</strong>. This allowed users to make better decisions based not only on numerical predictions but also on the interpretations and analyses provided by the model.</p>
 
 <h3>Differences Between Exchange & Exchange-Price</h3>
+<p>아래 차트는 이미지 대체</p>
 <table border="1">
     <tr>
         <th>Model</th>
@@ -104,6 +105,7 @@ title: "The Exchange Model"
   <li><b>USD MAPE(high, low)</b> represents the average MAPE value for January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
   <li>The individual date columns contain the MAPE values calculated for each specific date, and the final <b>USD MAPE(high, low)</b> value is derived by averaging these values.</li>
 </ul>
+<p>아래 차트는 이미지 대체</p>
 <table border="1">
     <tr>
       <th>Rank</th>
@@ -328,6 +330,7 @@ title: "The Exchange Model"
 <p>However, there were challenges in calculating the global currency rankings. Among the existing banks, only one provided exchange rate predictions for global currencies based on KRW (South Korean Won), while most banks either did not provide predictions for global currencies or only provided exchange rate predictions based on USD. This made it difficult to calculate the MAPE for global currencies.</p>
 <p>To address this issue and evaluate KRW-based exchange rate predictions, a method was applied where the exchange rates were converted based on the previous trading day's closing price, and the collected prediction values were compared. The following formula was used for the exchange rate conversion.</p>
 
+<p>아래 수식은 이미지 대체</p>
 <pre>
 EUR/USD => 1 EUR per USD (prediction unit provided by the bank)  
 USD/JPY => 1 USD per JPY (prediction unit provided by the bank)  
@@ -345,6 +348,7 @@ USD/KRW => Previous day's closing price (actual exchange rate)
   <li><b>JPY MAPE (high, low)</b> represents the average MAPE value for JPY (Japanese Yen) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
 </ul>
 
+<p>아래 차트는 이미지 대체</p>
 <table border="1">
     <tr>
         <th>Rank</th>
@@ -415,7 +419,83 @@ USD/KRW => Previous day's closing price (actual exchange rate)
 <p>Accuracy evaluation is a metric that measures how close the predicted values are to the actual values. To assess the prediction accuracy, MAPE (Mean Absolute Percentage Error) was calculated.</p>
 <p>In general, the exchange rate predictions provided by financial institutions focus on High (maximum) and Low (minimum) values, and predictions for the Close value are often not provided. Therefore, direct comparisons with other banks and financial institutions are difficult. As a result, the prediction results of the Exchange and Exchange-Price models were used to calculate the MAPE for the High, Low, and Close values of each currency and evaluate the accuracy.</p>
 
+<p>아래 차트는 이미지 대체</p>
 <h4>USD Currency</h4>
+<table border="1">
+    <tr>
+        <th>Site</th>
+        <th>Time</th>
+        <th>USD MAPE (high, low, close)</th>
+        <th>1/2</th>
+        <th>1/3</th>
+        <th>1/6</th>
+        <th>1/7</th>
+        <th>1/8</th>
+        <th>1/9</th>
+        <th>1/10</th>
+        <th>1/13</th>
+        <th>1/14</th>
+        <th>1/15</th>
+        <th>1/16</th>
+        <th>1/17</th>
+        <th>1/20</th>
+        <th>1/21</th>
+        <th>1/22</th>
+        <th>1/23</th>
+        <th>1/24</th>
+        <th>1/31</th>
+    </tr>
+    <tr>
+        <td>Exchange</td>
+        <td>00-24</td>
+        <td>0.35</td>
+        <td>0.16</td>
+        <td>0.20</td>
+        <td>0.14</td>
+        <td>0.64</td>
+        <td>0.21</td>
+        <td>0.92</td>
+        <td>0.20</td>
+        <td>0.83</td>
+        <td>0.22</td>
+        <td>0.12</td>
+        <td>0.08</td>
+        <td>0.46</td>
+        <td>0.32</td>
+        <td>0.50</td>
+        <td>0.56</td>
+        <td>0.32</td>
+        <td>0.47</td>
+        <td>0.20</td>
+        <td>0.15</td>
+    </tr>
+    <tr>
+        <td>Exchange-Price</td>
+        <td>00-24</td>
+        <td>0.30</td>
+        <td>0.21</td>
+        <td>0.26</td>
+        <td>0.53</td>
+        <td>0.60</td>
+        <td>0.28</td>
+        <td>0.25</td>
+        <td>0.54</td>
+        <td>0.40</td>
+        <td>0.26</td>
+        <td>0.06</td>
+        <td>0.26</td>
+        <td>0.07</td>
+        <td>0.87</td>
+        <td>0.03</td>
+        <td>0.19</td>
+        <td>0.19</td>
+        <td>0.55</td>
+        <td>0.11</td>
+    </tr>
+</table>
+
+<p>아래 차트는 이미지 대체</p>
+<h4>Global Currencies</h4>
 <table border="1">
     <tr>
         <th>Site</th>
@@ -500,6 +580,8 @@ USD/KRW => Previous day's closing price (actual exchange rate)
   <li><b>low</b> MAPE for low predictions.</li>
   <li><b>close</b> MAPE for close predictions.</li>
 </ul>
+
+<p>아래 차트는 이미지 대체</p>
 <h4>USD Currency</h4>
 <h4>EUR Currency</h4>
 <h4>JPY Currency</h4>
@@ -508,6 +590,7 @@ USD/KRW => Previous day's closing price (actual exchange rate)
 <p>The following explains what data is used by the Exchange and Exchange-Price models, and the flow of execution.
 When the prompt, exchange rate data, key forex market-related data, and summarized daily forex market and global economic news are input into the models, the Exchange model outputs a report that includes market analysis explanations and exchange rate predictions, while the Exchange-Price model outputs the exchange rate prediction results. Below, you can see the actual output results from the models.</p>
 
+<p>아래 출력 결과는 이미지 대체</p>
 <h4>Exchange Model</h4>
 <h4>Exchange-Price Model</h4>
 
