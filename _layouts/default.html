@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <style>
+    /* 전체 레이아웃 설정 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* 전체 배경을 흰색으로 설정 */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 헤더 스타일 */
+    header {
+      background: linear-gradient(to bottom right, #79F1A4, #0E5CAD); 
+      color: white;
+      padding: 120px 20px; 
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+
+    /* 본문 스타일 */
+    main {
+      background-color: #ffffff; /* 본문 배경을 흰색으로 설정 */
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 1200px; /* 최대 너비 설정 */
+    }
+
+    /* 푸터 스타일 */
+    footer {
+      background-color: #ffffff; /* 푸터 배경을 흰색으로 설정 */
+      color: #1a237e; /* 남색 텍스트 */
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Report 박스 스타일 */
+    .report-container {
+      display: block; /* Flex 대신 Block으로 변경 */
+      margin: 30px auto;
+      max-width: 1200px; /* 최대 폭을 설정하여 페이지에 중앙 정렬 */
+    }
+
+    .report-box {
+      width: 100%;
+      max-width: 100%; /* 부모에 맞는 최대 폭 */
+      padding: 20px;
+      background-color: #f5f5f5; /* 박스 배경을 흰색으로 변경 */
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; /* 박스 간격 */
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .report-box:hover {
+      transform: translateY(-5px); /* hover 시 박스가 위로 올라오는 효과 */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* hover 시 그림자 효과 강화 */
+    }
+
+    .report-box a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .report-box h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #333; /* 제목 색상 */
+    }
+
+    .report-box p {
+      margin: 0;
+      font-size: 18px;
+      color: #666; /* 텍스트 색상 */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+  <main>
+    {{ content }} <!-- 내용 삽입 부분 -->
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
