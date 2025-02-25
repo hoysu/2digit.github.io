@@ -1,4 +1,4 @@
 baseURL = "https://hoysu.github.io/2digit.github.io/"
 languageCode = "en-us"
 title = "2Digit"
-theme = "themes/hugo-theme-pixyll-master"
+theme = "hugo-theme-pixyll"
