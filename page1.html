@@ -4,605 +4,213 @@ title: "The Exchange Model"
 ---
 
 <h1>Foreign Exchange Market Prediction Service Using Generative AI</h1>
-
-<p>This article introduces the foreign exchange market prediction models Exchange and Exchange-Price. We will examine how these models were trained, their performance, and the potential benefits when applied to the financial market.</p>
-
+<p>This article introduces the foreign exchange market prediction models <strong>Exchange</strong> and <strong>Exchange-Price</strong>. We will examine how these models were trained, their performance, and the potential benefits when applied to the financial market.  </p>
 <h2>Functionality of Generative AI and Its Application in the Financial Market</h2>
-
 <h3>Advantages of Generative AI</h3>
-<p>Generative AI is an artificial intelligence technology that learns from large datasets to create new content. It can process various types of data, such as text, images, and audio. In particular, it can be a powerful tool for analyzing data and predicting future trends in the financial and economic sectors. The main advantages of Generative AI include:</p>
-<ul>
-  <li><strong>Pattern recognition ability </strong>to detect meaningful patterns in complex financial data.</li>
-  <li><strong>Automated analysis features </strong>that quickly analyze vast amounts of data and provide insights, reducing data interpretation time.</li>
-  <li>The ability to <strong>improve prediction accuracy </strong>by performing more precise analysis compared to traditional statistical prediction models.</li>
-  <li><strong>User-friendly interfaces </strong>based on natural language processing analysis, making it accessible for non-experts.</li>
-</ul>
-
+<p>Generative AI is an artificial intelligence technology that learns from large datasets to create new content. It can process various types of data, such as text, images, and audio. In particular, it can be a powerful tool for analyzing data and predicting future trends in the financial and economic sectors. The main advantages of Generative AI include:<br />
+- <strong>Pattern recognition ability</strong> to detect meaningful patterns in complex financial data.<br />
+- <strong>Automated analysis features</strong> that quickly analyze vast amounts of data and provide insights, reducing data interpretation time.<br />
+- The ability to <strong>improve prediction accuracy</strong> by performing more precise analysis compared to traditional statistical prediction models.<br />
+- <strong>User-friendly interfaces</strong> based on natural language processing analysis, making it accessible for non-experts.</p>
 <h3>Role of Generative AI in the Financial Market</h3>
-<p>The foreign exchange market is one of the most volatile financial markets, where precise predictions through data analysis are essential. In the past, forex predictions relied on the experience of experts and statistical models, but Generative AI can analyze large-scale market data in real-time and learn complex volatility patterns, allowing for more precise predictions. Generative AI can play the following roles in the financial market:</p>
-<ul>
-  <li><strong>Market trend analysis</strong>: Analyzes various economic data and news to summarize major economic trends.</li>
-  <li><strong>Currency exchange rate prediction</strong>: Uses time-series data and economic indicators to predict future exchange rates.</li>
-  <li><strong>Risk management</strong>: Analyzes market volatility to detect potential risk factors in advance.</li>
-  <li><strong>Automated financial report generation</strong>: AI organizes analysis results into natural language and provides reports.</li>
-</ul>
+<p>The foreign exchange market is one of the most volatile financial markets, where precise predictions through data analysis are essential. In the past, forex predictions relied on the experience of experts and statistical models, but Generative AI can analyze large-scale market data in real-time and learn complex volatility patterns, allowing for more precise predictions. Generative AI can play the following roles in the financial market:<br />
+- <strong>Market trend analysis</strong>: Analyzes various economic data and news to summarize major economic trends.<br />
+- <strong>Currency exchange rate prediction</strong>: Uses time-series data and economic indicators to predict future exchange rates.<br />
+- <strong>Risk management</strong>: Analyzes market volatility to detect potential risk factors in advance.<br />
+- <strong>Automated financial report generation</strong>: AI organizes analysis results into natural language and provides reports.  </p>
 <p>Based on these capabilities, we developed AI models optimized for foreign exchange market prediction, namely <strong>Exchange</strong> and <strong>Exchange-Price</strong>.</p>
-
 <h2>Performance of the Llama Model and Reasons for Choosing Llama 3.1 8B</h2>
-
 <h3>Performance of the Llama 3.1 8B Model</h3>
 <p>There are various Generative AI models, but to build a model optimized for exchange rate analysis and prediction, we chose Meta's <strong>Llama 3.1 8B</strong> model. The Llama model is optimized for learning large-scale data and excels in financial data analysis and time-series prediction.</p>
-<p>The key performance features of the Llama 3.1 8B model are as follows:</p>
-<ul>
-  <li><strong>Strong natural language processing performance</strong>, allowing effective analysis of text data such as economic news and market reports.</li>
-  <li><strong>Excellent scalability</strong>, enabling the model to evolve by combining with various financial market data.</li>
-  <li><strong>Optimized learning structure</strong>, which allows for the precise reflection of complex variables in the financial market.</li>
-  <li><strong>High-performance natural language comprehension</strong>, enabling more accurate analysis of financial news, economic reports, and market data.</li>
-  <li><strong>Efficient computational structure</strong>, providing high performance with relatively low computational cost.</li>
-  <li><strong>High adaptability</strong>, allowing for more precise predictions through supervised learning (SFT) and user feedback-based optimization (DPO).</li>
-</ul>
-
+<p>The key performance features of the Llama 3.1 8B model are as follows:<br />
+- <strong>Strong natural language processing performance</strong>, allowing effective analysis of text data such as economic news and market reports.<br />
+- <strong>Excellent scalability</strong>, enabling the model to evolve by combining with various financial market data.<br />
+- <strong>Optimized learning structure</strong>, which allows for the precise reflection of complex variables in the financial market.<br />
+- <strong>High-performance natural language comprehension</strong>, enabling more accurate analysis of financial news, economic reports, and market data.<br />
+- <strong>Efficient computational structure</strong>, providing high performance with relatively low computational cost.<br />
+- <strong>High adaptability</strong>, allowing for more precise predictions through supervised learning (SFT) and user feedback-based optimization (DPO).</p>
 <h3>Reasons for Choosing the Llama 3.1 8B Model</h3>
-<p>The foreign exchange market is a complex market that cannot be easily analyzed with simple time-series predictions. Various factors such as economic news, policy changes, and global financial flows influence exchange rate fluctuations, so a model that can effectively process this unstructured data is needed.</p>
-<p>The Llama 3.1 8B model has a <strong>strength in natural language-based data processing</strong> and is optimized for understanding context and meaning. This allows it to perform various functions beyond simple numerical predictions, such as <strong>market analysis report generation</strong>, <strong>summarizing economic trends, and explaining risk factors</strong>.</p>
-<p>Thanks to these characteristics, the Llama 3.1 8B model can provide more precise and reliable results than traditional financial prediction models and can be effectively applied in the uncertain foreign exchange market.</p>
-
+<p>The foreign exchange market is a complex market that cannot be easily analyzed with simple time-series predictions. Various factors such as economic news, policy changes, and global financial flows influence exchange rate fluctuations, so a model that can effectively process this unstructured data is needed.<br />
+The Llama 3.1 8B model has a <strong>strength in natural language-based data processing</strong> and is optimized for understanding context and meaning. This allows it to perform various functions beyond simple numerical predictions, such as <strong>market analysis report generation, summarizing economic trends, and explaining risk factors</strong>.<br />
+Thanks to these characteristics, the Llama 3.1 8B model can provide more precise and reliable results than traditional financial prediction models and can be effectively applied in the uncertain foreign exchange market.</p>
 <h2>Exchange and Exchange-Price Models</h2>
-
 <h3>Model Overview</h3>
-<p>The Exchange and Exchange-Price models, built on the Llama 3.1 8B model, are AI systems that analyze financial market data and predict exchange rate fluctuations.</p>
-<p>The Exchange model receives financial market data, analyzes key factors influencing exchange rate fluctuations, predicts market trends, and generates analysis reports based on this information. It focuses on explaining market volatility by considering various data, such as financial news, economic indicators, and policy changes.</p>
-<p>The Exchange-Price model is focused on exchange rate prediction, using the natural language processing capabilities of the LLM to analyze market volatility and predict the exchange rates of major global currencies (USD, JPY, EUR, etc.). It is specialized in quantitatively performing exchange rate predictions and provides more precise prediction results by learning from various input data.</p>
-
+<p>The Exchange and Exchange-Price models, built on the Llama 3.1 8B model, are AI systems that analyze financial market data and predict exchange rate fluctuations.<br />
+The Exchange model receives financial market data, analyzes key factors influencing exchange rate fluctuations, predicts market trends, and generates analysis reports based on this information. It focuses on explaining market volatility by considering various data, such as financial news, economic indicators, and policy changes.<br />
+The Exchange-Price model is focused on exchange rate prediction, using the natural language processing capabilities of the LLM to analyze market volatility and predict the exchange rates of major global currencies (USD, JPY, EUR, etc.). It is specialized in quantitatively performing exchange rate predictions and provides more precise prediction results by learning from various input data.</p>
 <h3>Training Process and Optimization Techniques</h3>
-<p>The Exchange and Exchange-Price models are built on Meta's Llama 3.1 8B architecture and were developed using SFT (Supervised Fine-Tuning) and DPO (Direct Preference Optimization) techniques to maximize exchange rate prediction performance.</p>
-
+<p>The Exchange and Exchange-Price models are built on Meta's Llama 3.1 8B architecture and were developed using SFT (Supervised Fine-Tuning) and DPO (Direct Preference Optimization) techniques to maximize exchange rate prediction performance.  </p>
 <h4>(1) SFT Application</h4>
-<p>SFT (Supervised Fine-Tuning) is a process that utilizes supervised learning to improve the model's prediction accuracy. It is a critical technique for optimizing the model to better reflect the complex patterns of the financial market and to consider unstructured data such as news and economic indicators, beyond simple statistical predictions.</p>
-<p>During the SFT process, a variety of training data were used. Text-based data such as financial news, economic indicators, and central bank announcements, along with exchange rate time-series data for currencies like USD, EUR, and JPY, were incorporated to comprehensively capture exchange rate fluctuation patterns. In addition, exchange rate response patterns to major policy changes were analyzed to increase the reliability of the prediction model.</p>
-
+<p>SFT (Supervised Fine-Tuning) is a process that utilizes supervised learning to improve the model's prediction accuracy. It is a critical technique for optimizing the model to better reflect the complex patterns of the financial market and to consider unstructured data such as news and economic indicators, beyond simple statistical predictions.<br />
+During the SFT process, a variety of training data were used. Text-based data such as financial news, economic indicators, and central bank announcements, along with exchange rate time-series data for currencies like USD, EUR, and JPY, were incorporated to comprehensively capture exchange rate fluctuation patterns. In addition, exchange rate response patterns to major policy changes were analyzed to increase the reliability of the prediction model.</p>
 <h4>(2) DPO Application</h4>
-<p>DPO (Direct Preference Optimization) is a process that optimizes the model by incorporating user feedback to enhance its practical usability. Since learning only from past data does not fully reflect real market conditions, feedback from financial experts was integrated to enable more practical predictions.</p>
-<p>The DPO technique was applied by having the AI generate multiple prediction scenarios, which were then evaluated and feedback provided by financial experts. This process not only increased the reliability of the predictions but also <strong>encouraged the model to prioritize providing more interpretable analysis results</strong>. This allowed users to make better decisions based not only on numerical predictions but also on the interpretations and analyses provided by the model.</p>
-
-<h3>Differences Between Exchange & Exchange-Price</h3>
-<p>아래 차트는 이미지 대체</p>
-<table border="1">
-    <tr>
-        <th>Model</th>
-        <th>Key Features</th>
-        <th>Training Data</th>
-        <th>Application Method</th>
-    </tr>
-    <tr>
-        <td>Exchange</td>
-        <td>Market analysis + exchange rate prediction</td>
-        <td>Exchange rate time-series data, key economic indicator time-series data, financial news</td>
-        <td>Analysis reports (explaining correlations between specific indicators and exchange rates, analyzing the potential impact of major news on exchange rate fluctuations, short-term exchange rate trend forecasts, etc.), exchange rate prediction for major currencies</td>
-        Exchange rate prediction for major currencies</td>
-    </tr>
-    <tr>
-        <td>Exchange-Price</td>
-        <td>Specialized in exchange rate prediction</td>
-        <td>Exchange rate time-series data, key economic indicator time-series data, financial news</td>
-        <td>Exchange rate prediction for major currencies</td>
-    </tr>
-</table>
-
+<p>DPO (Direct Preference Optimization) is a process that optimizes the model by incorporating user feedback to enhance its practical usability. Since learning only from past data does not fully reflect real market conditions, feedback from financial experts was integrated to enable more practical predictions.<br />
+The DPO technique was applied by having the AI generate multiple prediction scenarios, which were then evaluated and feedback provided by financial experts. This process not only increased the reliability of the predictions but also <strong>encouraged the model to prioritize providing more interpretable analysis results</strong>. This allowed users to make better decisions based not only on numerical predictions but also on the interpretations and analyses provided by the model.</p>
+<h3>Differences Between Exchange &amp; Exchange-Price</h3>
+<p>| Model         | Key Features                 | Training Data                                                                 | Application Method                                                                 |
+|---------------|------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Exchange      | Market analysis + exchange rate prediction | Exchange rate time-series data, key economic indicator time-series data, financial news | Analysis reports (explaining correlations between specific indicators and exchange rates, analyzing the potential impact of major news on exchange rate fluctuations, short-term exchange rate trend forecasts, etc.), exchange rate prediction for major currencies |
+| Exchange-Price| Specialized in exchange rate prediction | Exchange rate time-series data, key economic indicator time-series data, financial news | Exchange rate prediction for major currencies                                      |</p>
 <h2>Evaluation Metrics</h2>
 <p>Here, we will explain the methods used to evaluate the Exchange and Exchange-Price models.</p>
-
 <h3>Ranking Evaluation</h3>
-<p>Ranking evaluation is a process that compares multiple prediction values to measure their relative accuracy. To evaluate the accuracy of the predictions, MAPE (Mean Absolute Percentage Error) was calculated to determine the ranking. This method was used to assess the exchange rate prediction performance of financial institutions and the Exchange model.</p>
-<p>MAPE is a metric that expresses the average error between predicted and actual values as a percentage, where a lower value indicates higher prediction accuracy. The MAPE for the highest (High) and lowest (Low) predicted values of the USD exchange rate during January 2025 was calculated, and the ranking was based on these values.</p>
-
+<p>Ranking evaluation is a process that compares multiple prediction values to measure their relative accuracy. To evaluate the accuracy of the predictions, MAPE (Mean Absolute Percentage Error) was calculated to determine the ranking. This method was used to assess the exchange rate prediction performance of financial institutions and the Exchange model.<br />
+MAPE is a metric that expresses the average error between predicted and actual values as a percentage, where a lower value indicates higher prediction accuracy. The MAPE for the highest (High) and lowest (Low) predicted values of the USD exchange rate during January 2025 was calculated, and the ranking was based on these values.</p>
 <h4>USD Currency</h4>
-<p>The table below shows the ranking determined by calculating the MAPE for the USD exchange rate predictions.</p>
-<ul>
-  <li><b>Rank</b> refers to the accuracy ranking based on the MAPE values of <b>Site</b> (banks or financial institutions).</li>
-  <li><b>Site</b> includes the names of various banks and financial institutions that provide exchange rate predictions.</li>
-  <li><b>Time</b> indicates the period during which the predictions were made and serves as the evaluation criterion for the exchange rate prediction performance during that period.</li>
-  <li><b>USD MAPE(high, low)</b> represents the average MAPE value for January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
-  <li>The individual date columns contain the MAPE values calculated for each specific date, and the final <b>USD MAPE(high, low)</b> value is derived by averaging these values.</li>
-</ul>
-<p>아래 차트는 이미지 대체</p>
-<table border="1">
-    <tr>
-      <th>Rank</th>
-      <th>Site</th>
-      <th>Time</th>
-      <th>USD MAPE(high, low)</th>
-      <th>1/2</th>
-      <th>1/3</th>
-      <th>1/6</th>
-      <th>1/7</th>
-      <th>1/8</th>
-      <th>1/9</th>
-      <th>1/10</th>
-      <th>1/13</th>
-      <th>1/14</th>
-      <th>1/15</th>
-      <th>1/16</th>
-      <th>1/17</th>
-      <th>1/20</th>
-      <th>1/21</th>
-      <th>1/22</th>
-      <th>1/23</th>
-      <th>1/24</th>
-      <th>1/31</th>
-    </tr>
-      <tr>
-      <td>1</td>
-      <td>KEB Hana Bank</td>
-      <td>09-26</td>
-      <td>0.24</td>
-      <td>0.33</td>
-      <td>0.14</td>
-      <td>0.40</td>
-      <td>0.58</td>
-      <td>0.18</td>
-      <td>0.04</td>
-      <td>0.45</td>
-      <td>0.30</td>
-      <td>0.21</td>
-      <td>0.16</td>
-      <td>0.05</td>
-      <td>0.04</td>
-      <td>0.70</td>
-      <td>0.08</td>
-      <td>0.20</td>
-      <td>0.12</td>
-      <td>0.21</td>
-      <td>0.18</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Korea Trade Insurance Corp.</td>
-      <td>09-26</td>
-      <td>0.25</td>
-      <td>0.37</td>
-      <td>0.32</td>
-      <td>0.43</td>
-      <td>0.53</td>
-      <td>0.19</td>
-      <td>0.09</td>
-      <td>0.39</td>
-      <td>0.36</td>
-      <td>0.28</td>
-      <td>0.18</td>
-      <td>0.04</td>
-      <td>0.06</td>
-      <td>0.61</td>
-      <td>0.07</td>
-      <td>0.07</td>
-      <td>0.11</td>
-      <td>0.17</td>
-      <td>0.22</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td><b>Exchange-Price</b></td>
-      <td>00-24</td>
-      <td>0.26</td>
-      <td>0.25</td>
-      <td>0.19</td>
-      <td>0.52</td>
-      <td>0.41</td>
-      <td>0.20</td>
-      <td>0.18</td>
-      <td>0.47</td>
-      <td>0.37</td>
-      <td>0.23</td>
-      <td>0.06</td>
-      <td>0.12</td>
-      <td>0.05</td>
-      <td>0.55</td>
-      <td>0.01</td>
-      <td>0.26</td>
-      <td>0.18</td>
-      <td>0.46</td>
-      <td>0.15</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Shinhan Bank</td>
-      <td>09-26</td>
-      <td>0.27</td>
-      <td>0.44</td>
-      <td>0.51</td>
-      <td>Not provided</td>
-      <td>0.55</td>
-      <td>0.18</td>
-      <td>0.18</td>
-      <td>0.31</td>
-      <td>Not provided</td>
-      <td>0.35</td>
-      <td>0.23</td>
-      <td>0.02</td>
-      <td>0.18</td>
-      <td>Not provided</td>
-      <td>0.18</td>
-      <td>0.04</td>
-      <td>0.16</td>
-      <td>0.25</td>
-      <td>0.44</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Woori Bank</td>
-      <td>09-26</td>
-      <td>0.27</td>
-      <td>0.30</td>
-      <td>0.21</td>
-      <td>0.47</td>
-      <td>0.48</td>
-      <td>0.18</td>
-      <td>0.11</td>
-      <td>0.45</td>
-      <td>0.37</td>
-      <td>0.14</td>
-      <td>0.20</td>
-      <td>0.09</td>
-      <td>0.04</td>
-      <td>0.56</td>
-      <td>0.15</td>
-      <td>0.37</td>
-      <td>0.16</td>
-      <td>0.21</td>
-      <td>0.29</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td><b>Exchange</b></td>
-      <td>00-24</td>
-      <td>0.30</td>
-      <td>0.20</td>
-      <td>0.22</td>
-      <td>0.20</td>
-      <td>0.45</td>
-      <td>0.26</td>
-      <td>0.86</td>
-      <td>0.14</td>
-      <td>0.62</td>
-      <td>0.12</td>
-      <td>0.14</td>
-      <td>0.04</td>
-      <td>0.22</td>
-      <td>0.23</td>
-      <td>0.40</td>
-      <td>0.38</td>
-      <td>0.35</td>
-      <td>0.44</td>
-      <td>0.26</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>iM Bank</td>
-      <td>09-26</td>
-      <td>0.30</td>
-      <td>0.37</td>
-      <td>0.14</td>
-      <td>0.36</td>
-      <td>0.55</td>
-      <td>0.18</td>
-      <td>0.04</td>
-      <td>0.38</td>
-      <td>0.30</td>
-      <td>0.35</td>
-      <td>1.02</td>
-      <td>0.11</td>
-      <td>0.03</td>
-      <td>0.49</td>
-      <td>0.17</td>
-      <td>0.27</td>
-      <td>0.16</td>
-      <td>0.25</td>
-      <td>0.19</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>KOOKMIN Bank</td>
-      <td>09-26</td>
-      <td>0.30</td>
-      <td>0.37</td>
-      <td>0.41</td>
-      <td>0.36</td>
-      <td>0.51</td>
-      <td>0.25</td>
-      <td>0.11</td>
-      <td>0.37</td>
-      <td>0.34</td>
-      <td>0.55</td>
-      <td>0.33</td>
-      <td>0.18</td>
-      <td>0.10</td>
-      <td>0.56</td>
-      <td>0.24</td>
-      <td>0.08</td>
-      <td>0.09</td>
-      <td>0.12</td>
-      <td>0.44</td>
-    </tr>
-</table>
-
+<p>The table below shows the ranking determined by calculating the MAPE for the USD exchange rate predictions.<br />
+- <code>Rank</code> refers to the accuracy ranking based on the MAPE values of <code>Site</code> (banks or financial institutions).<br />
+- <code>Site</code> includes the names of various banks and financial institutions that provide exchange rate predictions.<br />
+- <code>Time</code> indicates the period during which the predictions were made and serves as the evaluation criterion for the exchange rate prediction performance during that period.<br />
+- <code>USD MAPE(high, low)</code> represents the average MAPE value for January 2025, calculated by averaging the MAPE values for both High and Low predictions.<br />
+- The individual date columns contain the MAPE values calculated for each specific date, and the final <code>USD MAPE(high, low)</code> value is derived by averaging these values.</p>
+<p>| Rank | Site                        | Time  | USD MAPE(high,low)   | 1/2  | 1/3  | 1/6          | 1/7  | 1/8  | 1/9  |   1/10 |  1/13 |  1/14 |  1/15 |   1/16 |  1/17 |  1/20 |  1/21 |  1/22 |  1/23 |  1/24 | 1/31 |
+|---|:--------|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|------------:|----------:|
+| 1    | KEB Hana Bank              | 09-26 | 0.24 | 0.33 |  0.14 | 0.4  | 0.58 | 0.18 | 0.04 | 0.45 |   0.3  |   0.21 |   0.16 | 0.05 | 0.04 | 0.7  |  0.08 | 0.2 | 0.12 | 0.21 |  0.18 | 
+| 2    | Korea Trade Insurance Corp. |  09-26 | 0.25 | 0.37| 0.32 | 0.43 | 0.53 | 0.19 |0.09|0.39|0.36|0.28|0.18|0.04|0.06|0.61|0.07|0.07|0.11|0.17|0.22|
+| 3    | <strong>Exchange-Price</strong>              | 00-24 |  0.26 |  0.25 | 0.19 | 0.52 | 0.41 | 0.20 | 0.18 | 0.47 | 0.37 | 0.23 | 0.06 | 0.12 | 0.05 | 0.55 | 0.01 | 0.26 | 0.18 | 0.46 | 0.15 |
+| 4    | Shinhan Bank             | 09-26 | 0.27 |  0.44 |         0.51 | Not provided    |         0.55 |         0.18 |         0.18 |         0.31 |       Not provided    |         0.35 |         0.23 |         0.02 |         0.18 | Not provided    |         0.18 |         0.04 |         0.16 |         0.25 |         0.44 |
+| 4    | Woori Bank                  | 09-26 | 0.27 | 0.3 | 0.21 | 0.47 | 0.48 | 0.18 | 0.11 | 0.45 | 0.37 | 0.14 | 0.2 | 0.09 | 0.04 | 0.56 | 0.15 | 0.37 | 0.16 | 0.21 | 0.29 |
+| 6    | iM Bank                | 09-26 | 0.30 | 0.37 | 0.14 | 0.36 | 0.55 | 0.18 | 0.04 | 0.38 | 0.30 | 0.35 | 1.02 | 0.11 | 0.03 | 0.49 | 0.17 | 0.27 | 0.16 | 0.25 | 0.19 | 
+| 6    | KOOKMIN BANK                   | 09-26 | 0.30|  0.37 |  0.41 |   0.36 |   0.51 |   0.25 |   0.11 |   0.37 |   0.34 | 0.55 |  0.33 | 0.18 |  0.1  | 0.56 | 0.24 |  0.08 | 0.09 |  0.12 |  0.44 |
+| 8    | <strong>Exchange</strong>                |  00-24 | 0.32 | 0.22 | 0.20 | 0.45 | 0.26 | 0.86 | 0.14 | 0.62 | 0.12 | 0.14 | 0.04 | 0.22 | 0.23 | 0.40 | 0.38 | 0.35 | 0.44 | 0.26 | 0.42 | </p>
 <h4>Global Currencies</h4>
-<p>The global currency ranking was determined by calculating the MAPE (Mean Absolute Percentage Error) for the exchange rate predictions of EUR (Euro) and JPY (Japanese Yen), excluding USD.</p>
-<p>However, there were challenges in calculating the global currency rankings. Among the existing banks, only one provided exchange rate predictions for global currencies based on KRW (South Korean Won), while most banks either did not provide predictions for global currencies or only provided exchange rate predictions based on USD. This made it difficult to calculate the MAPE for global currencies.</p>
-<p>To address this issue and evaluate KRW-based exchange rate predictions, a method was applied where the exchange rates were converted based on the previous trading day's closing price, and the collected prediction values were compared. The following formula was used for the exchange rate conversion.</p>
-
-<p>아래 수식은 이미지 대체</p>
-<pre>
-EUR/USD => 1 EUR per USD (prediction unit provided by the bank)  
-USD/JPY => 1 USD per JPY (prediction unit provided by the bank)  
-USD/KRW => Previous day's closing price (actual exchange rate)
-
-1. (USD / EUR) * (KRW / USD) = KRW / EUR = (1 EUR per KRW)  
-2. (KRW / USD) / (JPY / USD) = KRW / JPY = (1 JPY per KRW)
-</pre>
-
-<ul>
-  <li><b>Rank</b> indicates the prediction accuracy ranking of each <strong>Site</strong> (bank or financial institution) based on the MAPE value.</li>
-  <li><b>Site</b> lists the names of various banks and financial institutions that provide exchange rate predictions.</li>
-  <li><b>Time</b> represents the period during which the predictions were made and serves as the evaluation criterion for exchange rate predictions during that period.</li>
-  <li><b>EUR MAPE (high, low)</b> represents the average MAPE value for EUR (Euro) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
-  <li><b>JPY MAPE (high, low)</b> represents the average MAPE value for JPY (Japanese Yen) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
-</ul>
-
-<p>아래 차트는 이미지 대체</p>
-<table border="1">
-    <tr>
-        <th>Rank</th>
-        <th>Site</th>
-        <th>Time</th>
-        <th>EUR MAPE (high, low)</th>
-        <th>JPY MAPE (high, low)</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td><strong>Exchange-Price</strong></td>
-        <td>00-24</td>
-        <td>0.20</td>
-        <td>0.32</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td><strong>Exchange</strong></td>
-        <td>00-24</td>
-        <td>0.25</td>
-        <td>0.44</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>iM Bank</td>
-        <td>09-26</td>
-        <td>0.36</td>
-        <td>0.52</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>KOOKMIN BANK</td>
-        <td>09-26</td>
-        <td>0.33</td>
-        <td>0.58</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>KEB Hana Bank</td>
-        <td>09-26</td>
-        <td>0.45</td>
-        <td>0.61</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Shinhan Bank</td>
-        <td>09-26</td>
-        <td>0.52</td>
-        <td>0.63</td>
-    </tr>
-    <tr>
-        <td>-</td>
-        <td>Woori Bank</td>
-        <td>-</td>
-        <td>Not provided</td>
-        <td>Not provided</td>
-    </tr>
-    <tr>
-        <td>-</td>
-        <td>Korea Trade Insurance Corp.</td>
-        <td>-</td>
-        <td>Not provided</td>
-        <td>Not provided</td>
-    </tr>
-</table>
-
+<p>The global currency ranking was determined by calculating the MAPE (Mean Absolute Percentage Error) for the exchange rate predictions of EUR (Euro) and JPY (Japanese Yen), excluding USD.<br />
+However, there were challenges in calculating the global currency rankings. Among the existing banks, only one provided exchange rate predictions for global currencies based on KRW (South Korean Won), while most banks either did not provide predictions for global currencies or only provided exchange rate predictions based on USD. This made it difficult to calculate the MAPE for global currencies.<br />
+To address this issue and evaluate KRW-based exchange rate predictions, a method was applied where the exchange rates were converted based on the previous trading day's closing price, and the collected prediction values were compared. The following formula was used for the exchange rate conversion.
+~~~
+EUR/USD =&gt; 1 EUR per USD (prediction unit provided by the bank)<br />
+USD/JPY =&gt; 1 USD per JPY (prediction unit provided by the bank)<br />
+USD/KRW =&gt; Previous day's closing price (actual exchange rate)</p>
+<ol>
+<li>(USD / EUR) * (KRW / USD) = KRW / EUR = (1 EUR per KRW)  </li>
+<li>
+<p>(KRW / USD) / (JPY / USD) = KRW / JPY = (1 JPY per KRW)
+~~~ </p>
+</li>
+<li>
+<p><code>Rank</code> indicates the prediction accuracy ranking of each <code>Site</code> (bank or financial institution) based on the MAPE value.  </p>
+</li>
+<li><code>Site</code> lists the names of various banks and financial institutions that provide exchange rate predictions.  </li>
+<li><code>Time</code> represents the period during which the predictions were made and serves as the evaluation criterion for exchange rate predictions during that period.  </li>
+<li><code>EUR MAPE(high, low)</code> represents the average MAPE value for EUR (Euro) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.  </li>
+<li><code>JPY MAPE(high, low)</code> represents the average MAPE value for JPY (Japanese Yen) exchange rate predictions in January 2025, calculated by averaging the MAPE values for both High and Low predictions.</li>
+</ol>
+<p>| Rank| Site | Time | EUR MAPE(high,low)     | JPY MAPE(high,low)     | 
+|:------------|:------------|:----------|--------|------|
+|1|  <strong>Exchange-Price</strong> | 00-24 |  0.20 | 0.32 | 
+|2|<strong>Exchange</strong> | 00-24 | 0.22 | 0.43 |
+|3|iM Bank| 09-26 | 0.36 | 0.52 | 
+|4|KOOKMIN BANK|09-26 | 0.33  | 0.58 | 
+|5|KEB Hana Bank| 09-26 | 0.45   | 0.61|
+|6|Shinhan Bank| 09-26 | 0.52  | 0.63|
+|-|Woori Bank|- | Not provided|Not provided |
+|-|Korea Trade Insurance Corp. | - |Not provided|Not provided |</p>
 <h3>Accuracy Evaluation</h3>
-<p>Accuracy evaluation is a metric that measures how close the predicted values are to the actual values. To assess the prediction accuracy, MAPE (Mean Absolute Percentage Error) was calculated.</p>
-<p>In general, the exchange rate predictions provided by financial institutions focus on High (maximum) and Low (minimum) values, and predictions for the Close value are often not provided. Therefore, direct comparisons with other banks and financial institutions are difficult. As a result, the prediction results of the Exchange and Exchange-Price models were used to calculate the MAPE for the High, Low, and Close values of each currency and evaluate the accuracy.</p>
-
-<p>아래 차트는 이미지 대체</p>
+<p>Accuracy evaluation is a metric that measures how close the predicted values are to the actual values. To assess the prediction accuracy, MAPE (Mean Absolute Percentage Error) was calculated.<br />
+In general, the exchange rate predictions provided by financial institutions focus on High (maximum) and Low (minimum) values, and predictions for the Close value are often not provided. Therefore, direct comparisons with other banks and financial institutions are difficult. As a result, the prediction results of the Exchange and Exchange-Price models were used to calculate the MAPE for the High, Low, and Close values of each currency and evaluate the accuracy.</p>
 <h4>USD Currency</h4>
-<table border="1">
-    <tr>
-        <th>Site</th>
-        <th>Time</th>
-        <th>USD MAPE (high, low, close)</th>
-        <th>1/2</th>
-        <th>1/3</th>
-        <th>1/6</th>
-        <th>1/7</th>
-        <th>1/8</th>
-        <th>1/9</th>
-        <th>1/10</th>
-        <th>1/13</th>
-        <th>1/14</th>
-        <th>1/15</th>
-        <th>1/16</th>
-        <th>1/17</th>
-        <th>1/20</th>
-        <th>1/21</th>
-        <th>1/22</th>
-        <th>1/23</th>
-        <th>1/24</th>
-        <th>1/31</th>
-    </tr>
-    <tr>
-        <td>Exchange</td>
-        <td>00-24</td>
-        <td>0.35</td>
-        <td>0.16</td>
-        <td>0.20</td>
-        <td>0.14</td>
-        <td>0.64</td>
-        <td>0.21</td>
-        <td>0.92</td>
-        <td>0.20</td>
-        <td>0.83</td>
-        <td>0.22</td>
-        <td>0.12</td>
-        <td>0.08</td>
-        <td>0.46</td>
-        <td>0.32</td>
-        <td>0.50</td>
-        <td>0.56</td>
-        <td>0.32</td>
-        <td>0.47</td>
-        <td>0.20</td>
-        <td>0.15</td>
-    </tr>
-    <tr>
-        <td>Exchange-Price</td>
-        <td>00-24</td>
-        <td>0.30</td>
-        <td>0.21</td>
-        <td>0.26</td>
-        <td>0.53</td>
-        <td>0.60</td>
-        <td>0.28</td>
-        <td>0.25</td>
-        <td>0.54</td>
-        <td>0.40</td>
-        <td>0.26</td>
-        <td>0.06</td>
-        <td>0.26</td>
-        <td>0.07</td>
-        <td>0.87</td>
-        <td>0.03</td>
-        <td>0.19</td>
-        <td>0.19</td>
-        <td>0.55</td>
-        <td>0.11</td>
-    </tr>
-</table>
-
-<p>아래 차트는 이미지 대체</p>
+<p>| Site   |  Time | USD MAPE(high,low,close) |  1/2 |   1/3 |   1/6 |  1/7 |   1/8 |   1/9 |   1/10 |  1/13 |  1/14 |  1/15 |   1/16 |  1/17 |  1/20 |  1/21 |  1/22 |  1/23 |  1/24 | 1/31 |
+|:--------|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|-------------:|------------:|----------:|
+| <strong>Exchange</strong> | 00-24 | 0.38 | 0.20 | 0.14 | 0.64 | 0.21 | 0.92 | 0.20 | 0.83 | 0.22 | 0.12 | 0.08 | 0.46 | 0.32 | 0.50 | 0.56 | 0.32 | 0.47 | 0.20 | 0.50 | 
+|  <strong>Exchange-Price</strong> |  00-24 | 0.31 | 0.21 | 0.26 | 0.53 | 0.60 | 0.28 | 0.25 | 0.54 | 0.40 | 0.26 | 0.06 | 0.26 | 0.07 | 0.87 | 0.03 | 0.19 | 0.19| 0.55| 0.11| </p>
 <h4>Global Currencies</h4>
-<table border="1">
-    <tr>
-        <th>Site</th>
-        <th>Time</th>
-        <th>USD MAPE (high, low, close)</th>
-        <th>1/2</th>
-        <th>1/3</th>
-        <th>1/6</th>
-        <th>1/7</th>
-        <th>1/8</th>
-        <th>1/9</th>
-        <th>1/10</th>
-        <th>1/13</th>
-        <th>1/14</th>
-        <th>1/15</th>
-        <th>1/16</th>
-        <th>1/17</th>
-        <th>1/20</th>
-        <th>1/21</th>
-        <th>1/22</th>
-        <th>1/23</th>
-        <th>1/24</th>
-        <th>1/31</th>
-    </tr>
-    <tr>
-        <td>Exchange</td>
-        <td>00-24</td>
-        <td>0.35</td>
-        <td>0.16</td>
-        <td>0.20</td>
-        <td>0.14</td>
-        <td>0.64</td>
-        <td>0.21</td>
-        <td>0.92</td>
-        <td>0.20</td>
-        <td>0.83</td>
-        <td>0.22</td>
-        <td>0.12</td>
-        <td>0.08</td>
-        <td>0.46</td>
-        <td>0.32</td>
-        <td>0.50</td>
-        <td>0.56</td>
-        <td>0.32</td>
-        <td>0.47</td>
-        <td>0.20</td>
-        <td>0.15</td>
-    </tr>
-    <tr>
-        <td>Exchange-Price</td>
-        <td>00-24</td>
-        <td>0.30</td>
-        <td>0.21</td>
-        <td>0.26</td>
-        <td>0.53</td>
-        <td>0.60</td>
-        <td>0.28</td>
-        <td>0.25</td>
-        <td>0.54</td>
-        <td>0.40</td>
-        <td>0.26</td>
-        <td>0.06</td>
-        <td>0.26</td>
-        <td>0.07</td>
-        <td>0.87</td>
-        <td>0.03</td>
-        <td>0.19</td>
-        <td>0.19</td>
-        <td>0.55</td>
-        <td>0.11</td>
-    </tr>
-</table>
-
+<p>| Site |  Time | EUR MAPE(high,low,close)     | JPY MAPE(high,low,close)     | 
+|:------------|:------------|:----------|--------|
+| <strong>Exchange</strong> | 00-24 | 0.30 | 0.55 | 
+|  <strong>Exchange-Price</strong> | 00-24 | 0.23 | 0.42  |</p>
 <h3>Robustness Evaluation</h3>
-<p>Robustness evaluation is the process of verifying whether a system or model operates reliably in the face of various environmental changes or exceptional situations. It tests whether the developed model can maintain performance without being affected by data uncertainties, noise, errors, or unexpected changes.</p>
-<p>To evaluate the robustness of the Exchange and Exchange-Price models, various data transformation methods were applied to the exchange rate predictions in January 2025. By analyzing how MAPE (Mean Absolute Percentage Error) changes depending on the input data transformation methods, the robustness of the models was assessed.</p>
+<p>Robustness evaluation is the process of verifying whether a system or model operates reliably in the face of various environmental changes or exceptional situations. It tests whether the developed model can maintain performance without being affected by data uncertainties, noise, errors, or unexpected changes.<br />
+To evaluate the robustness of the Exchange and Exchange-Price models, various data transformation methods were applied to the exchange rate predictions in January 2025. By analyzing how MAPE (Mean Absolute Percentage Error) changes depending on the input data transformation methods, the robustness of the models was assessed.  </p>
 <ul>
-  <li><b>Task</b> Represents the applied input data transformation methods. The impact of data transformation on exchange rate prediction performance was analyzed using three methods.</li>
-  <li><b>MAPE(high, low)</b> Represents the average MAPE for high and low predictions.</li>
-  <li><b>MAPE(high, low, close)</b> Represents the average MAPE for high, low, and close predictions.</li>
-  <li><b>high</b> MAPE for high predictions.</li>
-  <li><b>low</b> MAPE for low predictions.</li>
-  <li><b>close</b> MAPE for close predictions.</li>
+<li><code>Task</code>: Represents the applied input data transformation methods. The impact of data transformation on exchange rate prediction performance was analyzed using three methods.  <ul>
+<li><strong>Normal</strong>: The model is trained and evaluated using data from a fixed period (default: 7 days).  </li>
+<li><strong>Random date</strong>: The model is trained and evaluated by randomly setting the input data period (3–7 days).  </li>
+<li><strong>Masking</strong>: The model is trained and evaluated by randomly excluding items from certain categories of input data. However, at least one item from each category (e.g., products, economic indicators) is guaranteed to be included.  </li>
 </ul>
-
-<p>아래 차트는 이미지 대체</p>
+</li>
+<li><code>MAPE(high, low)</code>: Represents the average MAPE for high and low predictions.  </li>
+<li><code>MAPE(high, low, close)</code>: Represents the average MAPE for high, low, and close predictions.  </li>
+<li><code>high</code>: MAPE for high predictions.  </li>
+<li><code>low</code>: MAPE for low predictions.  </li>
+<li><code>close</code>: MAPE for close predictions.</li>
+</ul>
 <h4>USD Currency</h4>
+<p>|Model    |  Task |  MAPE(high,low) |  MAPE(high,low,close) |  high      | low       | close     |<br />
+|:--------|:---------|:----------|:----------|:----------|:----------|-------------------------------:|
+| Exchange | Normal | 0.32 | 0.38 | 0.31 | 0.33 | 0.51 |
+|  Exchange | Random date | 0.26 | 0.33 | 0.25 | 0.27 | 0.47 |
+|  Exchange |  Masking | 0.31 | 0.36 | 0.24 | 0.37 | 0.48 | 
+|  Exchange-Price | Normal |   0.26 |  0.30 | 0.21  | 0.30  | 0.40  |           <br />
+|  Exchange-Price | Random date |    0.32|  0.40 | 0.31  | 0.33 | 0.56  | 
+|  Exchange-Price |  Masking |   0.36 |  0.42 | 0.36  | 0.36  | 0.53  | </p>
 <h4>EUR Currency</h4>
+<p>| Model | Task     |  MAPE(high,low) | MAPE(high,low,close) |   high      | low       | close     | 
+|:--------|:---------|:----------|:----------|:----------|:----------|-------------------------------:|
+| Exchange | Normal | 0.22 | 0.30 | 0.23 | 0.22 | 0.46 |
+| Exchange | Random date | 0.32 | 0.43 | 0.29 | 0.36 | 0.62 | 
+| Exchange |  Masking | 0.30 | 0.37 | 0.26 | 0.36 | 0.51 | 
+| Exchange-Price | Normal |   0.20 |    0.23   |0.18  | 0.23  | 0.29  |                    <br />
+| Exchange-Price | Random date|     0.25  |    0.29 |0.23  | 0.26  | 0.38 |                  <br />
+| Exchange-Price | Masking| 0.28  |     0.32 | 0.30  | 0.26  | 0.40  |                      </p>
 <h4>JPY Currency</h4>
-
-<h3>Usage</h3>
-<p>The following explains what data is used by the Exchange and Exchange-Price models, and the flow of execution.
-When the prompt, exchange rate data, key forex market-related data, and summarized daily forex market and global economic news are input into the models, the Exchange model outputs a report that includes market analysis explanations and exchange rate predictions, while the Exchange-Price model outputs the exchange rate prediction results. Below, you can see the actual output results from the models.</p>
-
-<p>아래 출력 결과는 이미지 대체</p>
+<p>|Model  | Task |MAPE(high,low) |  MAPE(high,low,close) |  high      | low       | close     |
+|:--------|:---------|:----------|:----------|:----------|:----------|-------------------------------:|
+| Exchange | Normal | 0.43 | 0.55 | 0.33 | 0.52 | 0.81 | 
+| Exchange | Random date | 0.37 | 0.45 | 0.33 | 0.42 | 0.59 |
+| Exchange |  Masking | 0.41 | 0.75 | 0.46 | 0.36 | 1.44 |
+| Exchange-Price | Normal  | 0.32 | 0.42 | 0.32 | 0.31 | 0.62 |
+| Exchange-Price | Random date | 0.37 | 0.49 | 0.39 | 0.35 | 0.73 |
+| Exchange-Price | Masking| 0.43 | 0.51 | 0.42 | 0.44 | 0.68 |    </p>
+<h2>Usage</h2>
+<p>The following explains what data is used by the Exchange and Exchange-Price models, and the flow of execution.<br />
+When the <code>prompt</code>, <code>exchange rate data</code>, <code>key forex market-related data</code>, and <code>summarized daily forex market and global economic news</code> are input into the models, the <strong>Exchange model</strong> outputs a report that includes market analysis explanations and exchange rate predictions, while the <strong>Exchange-Price model</strong> outputs the exchange rate prediction results. Below, you can see the actual output results from the models.</p>
 <h4>Exchange Model</h4>
+<p>~~~</p>
+<h3>분석</h3>
+<ol>
+<li>
+<p><strong>달러 강세 유지</strong>: 미국의 경제 지표가 강세를 유지하고 있으며, 서비스업 및 고용 지표는 특히 긍정적인 영향을 미쳤습니다. 이는 달러 강세를 뒷받침하는 주요 요인입니다. 또한, 글로벌 주요 통화 대비 달러의 상대적 강세가 지속되고 있습니다.</p>
+</li>
+<li>
+<p><strong>국내외 경제 불확실성 확대</strong>: 한국 정치적 불안과 국제적 트럼프 관세 정책 변화 등이 원화 약세를 심화시키고 있으며, 이는 환율 상승 압력으로 작용하고 있습니다. 한편, 미국 경제의 상대적 안정성과 성장 기대감이 달러 가치에 추가적인 상승력을 부여합니다.</p>
+</li>
+<li>
+<p><strong>외국인 투자 증가 및 코스피 상승</strong>: 외국인과 기관의 매수세가 증가하면서 코스피는 안정적인 상승세를 유지하고 있습니다. 이는 환율 하락 압력으로 작용할 가능성이 있습니다.</p>
+</li>
+<li>
+<p><strong>원유와 금 가격 상승</strong>: 국제 원유와 금 가격이 상승세를 보이며 안전 자산으로서의 투자자 신뢰도를 확대하고 있습니다. 이는 글로벌 경제 불확실성이 높아짐에 따라 안전 자산 선호가 강화된 요인으로 해석됩니다.</p>
+</li>
+<li>
+<p><strong>S&amp;P500 변동성</strong>: 미국 경제의 고용 및 서비스 지표가 호조를 보이며 S&amp;P500은 변동성을 나타내고 있습니다. 기술주 및 반도체 업종의 상승이 시장 흐름을 주도하는 주요 요인입니다.</p>
+</li>
+<li>
+<p><strong>유가와 원화 상승폭 연계</strong>: 원유 가격 상승과 연준의 금리 인상 기대감이 환율에 추가적인 상승 요인을 제공할 가능성이 있습니다.</p>
+</li>
+<li>
+<p><strong>환율 변동성 제한 요인</strong>: 국내에서 대규모 환헤지와 외환당국의 개입 가능성이 환율 변동성을 제한하고 있습니다. 그러나 국제적인 경제 불확실성과 외환시장 흐름은 이에 맞물려 달러 환율 상승 압력을 유지하고 있습니다.</p>
+</li>
+</ol>
+<h3>예측</h3>
+<p>2025년 1월 9일 USD 환율은 미국 경제의 강한 지표와 달러 강세 흐름, 그리고 국내외 불확실성이 상존하는 가운데, 변동성이 유지될 가능성이 있습니다. 다만, 외국인과 기관 투자자들의 매수세와 국내 환헤지 움직임이 환율 하락 요인을 제공할 것입니다. 이에 따라, USD/원 환율은 전일 종가(1462) 대비 소폭 하락세를 보이며, 종가가 <strong>1453.21원</strong>에 마감할 것으로 예측됩니다.</p>
+<p><code>csv
+date,Open,High,Low,Close
+2025-01-09,1462.0,1463.51,1450.3,1453.21</code>
+~~~</p>
 <h4>Exchange-Price Model</h4>
-
-<h3>Conclusion</h3>
-<p>The Exchange and Exchange-Price models, built on the generative AI model Llama 3.1 8B, would bring a highly innovative introduction of Generative AI to the financial market if applied to the real-world financial industry. Since the models use integrated time-series datasets during training, it maximizes the efficiency of model training and inference, enabling fast learning and achieving the following effects:</p>
-<p>Unlike traditional services that rely on past experiences and are limited in volatile environments, the LLM-based AI forex trader can analyze vast global data in real-time with high data analysis capabilities and make precise predictions. Furthermore, it provides user-friendly financial services by explaining predictions in a way that even non-experts can easily understand.</p>
-<p>Being an AI-based service rather than human-based, it can be automated and operated 24/7, providing financial information whenever users need it, anywhere. The model can quickly adapt to market volatility by learning various patterns and swiftly capturing changes in real-time data regarding exchange rate fluctuations through multiple leading indicators.</p>
-<p>The model has also demonstrated performance that surpasses traditional human-based predictions in evaluation metrics, making the Exchange and Exchange-Price models highly applicable and valuable.</p>
-
-<h3>References</h3>
-<p>[1] meta-llama/Llama-3.1-8B(Model): https://huggingface.co/meta-llama/Llama-3.1-8B</p>
-<p>[2] davidkim205/exchange(Model): https://huggingface.co/davidkim205/exchange</p>
-<p>[3] davidkim205/exchange-price(Model): https://huggingface.co/davidkim205/exchange-price</p>
+<p>~~~
+date,Open,High,Low,Close
+2025-01-09,1462.0,1463.51,1450.3,1453.21
+~~~</p>
+<h2>Conclusion</h2>
+<p>The Exchange and Exchange-Price models, built on the generative AI model Llama 3.1 8B, would bring a highly innovative introduction of Generative AI to the financial market if applied to the real-world financial industry. Since the models use integrated time-series datasets during training, it maximizes the efficiency of model training and inference, enabling fast learning and achieving the following effects:<br />
+Unlike traditional services that rely on past experiences and are limited in volatile environments, the LLM-based AI forex trader can analyze vast global data in real-time with high data analysis capabilities and make precise predictions. Furthermore, it provides user-friendly financial services by explaining predictions in a way that even non-experts can easily understand.<br />
+Being an AI-based service rather than human-based, it can be automated and operated 24/7, providing financial information whenever users need it, anywhere. The model can quickly adapt to market volatility by learning various patterns and swiftly capturing changes in real-time data regarding exchange rate fluctuations through multiple leading indicators.<br />
+The model has also demonstrated performance that surpasses traditional human-based predictions in evaluation metrics, making the <strong>Exchange</strong> and <strong>Exchange-Price</strong> models highly applicable and valuable.  </p>
+<h2>References</h2>
+<ul>
+<li>[1] meta-llama/Llama-3.1-8B(Model): https://huggingface.co/meta-llama/Llama-3.1-8B</li>
+<li>[2] davidkim205/exchange(Model): https://huggingface.co/davidkim205/exchange</li>
+<li>[3] davidkim205/exchange-price(Model): https://huggingface.co/davidkim205/exchange-price </li>
+</ul>
 
 <a href="index.html">이전</a>
