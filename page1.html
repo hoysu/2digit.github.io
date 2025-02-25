@@ -4,11 +4,9 @@ title: "The Exchange Model"
 ---
 
 <h1>Foreign Exchange Market Prediction Service Using Generative AI</h1>
-
 <p>This article introduces the foreign exchange market prediction models Exchange and Exchange-Price. We will examine how these models were trained, their performance, and the potential benefits when applied to the financial market.</p>
 
 <h2>Functionality of Generative AI and Its Application in the Financial Market</h2>
-
 <h3>Advantages of Generative AI</h3>
 <p>Generative AI is an artificial intelligence technology that learns from large datasets to create new content. It can process various types of data, such as text, images, and audio. In particular, it can be a powerful tool for analyzing data and predicting future trends in the financial and economic sectors. The main advantages of Generative AI include:</p>
 <ul>
@@ -29,7 +27,6 @@ title: "The Exchange Model"
 <p>Based on these capabilities, we developed AI models optimized for foreign exchange market prediction, namely <strong>Exchange</strong> and <strong>Exchange-Price</strong>.</p>
 
 <h2>Performance of the Llama Model and Reasons for Choosing Llama 3.1 8B</h2>
-
 <h3>Performance of the Llama 3.1 8B Model</h3>
 <p>There are various Generative AI models, but to build a model optimized for exchange rate analysis and prediction, we chose Meta's <strong>Llama 3.1 8B</strong> model. The Llama model is optimized for learning large-scale data and excels in financial data analysis and time-series prediction.</p>
 <p>The key performance features of the Llama 3.1 8B model are as follows:</p>
@@ -48,7 +45,6 @@ title: "The Exchange Model"
 <p>Thanks to these characteristics, the Llama 3.1 8B model can provide more precise and reliable results than traditional financial prediction models and can be effectively applied in the uncertain foreign exchange market.</p>
 
 <h2>Exchange and Exchange-Price Models</h2>
-
 <h3>Model Overview</h3>
 <p>The Exchange and Exchange-Price models, built on the Llama 3.1 8B model, are AI systems that analyze financial market data and predict exchange rate fluctuations.</p>
 <p>The Exchange model receives financial market data, analyzes key factors influencing exchange rate fluctuations, predicts market trends, and generates analysis reports based on this information. It focuses on explaining market volatility by considering various data, such as financial news, economic indicators, and policy changes.</p>
@@ -56,11 +52,9 @@ title: "The Exchange Model"
 
 <h3>Training Process and Optimization Techniques</h3>
 <p>The Exchange and Exchange-Price models are built on Meta's Llama 3.1 8B architecture and were developed using SFT (Supervised Fine-Tuning) and DPO (Direct Preference Optimization) techniques to maximize exchange rate prediction performance.</p>
-
 <h4>(1) SFT Application</h4>
 <p>SFT (Supervised Fine-Tuning) is a process that utilizes supervised learning to improve the model's prediction accuracy. It is a critical technique for optimizing the model to better reflect the complex patterns of the financial market and to consider unstructured data such as news and economic indicators, beyond simple statistical predictions.</p>
 <p>During the SFT process, a variety of training data were used. Text-based data such as financial news, economic indicators, and central bank announcements, along with exchange rate time-series data for currencies like USD, EUR, and JPY, were incorporated to comprehensively capture exchange rate fluctuation patterns. In addition, exchange rate response patterns to major policy changes were analyzed to increase the reliability of the prediction model.</p>
-
 <h4>(2) DPO Application</h4>
 <p>DPO (Direct Preference Optimization) is a process that optimizes the model by incorporating user feedback to enhance its practical usability. Since learning only from past data does not fully reflect real market conditions, feedback from financial experts was integrated to enable more practical predictions.</p>
 <p>The DPO technique was applied by having the AI generate multiple prediction scenarios, which were then evaluated and feedback provided by financial experts. This process not only increased the reliability of the predictions but also <strong>encouraged the model to prioritize providing more interpretable analysis results</strong>. This allowed users to make better decisions based not only on numerical predictions but also on the interpretations and analyses provided by the model.</p>
@@ -95,7 +89,6 @@ title: "The Exchange Model"
 <h3>Ranking Evaluation</h3>
 <p>Ranking evaluation is a process that compares multiple prediction values to measure their relative accuracy. To evaluate the accuracy of the predictions, MAPE (Mean Absolute Percentage Error) was calculated to determine the ranking. This method was used to assess the exchange rate prediction performance of financial institutions and the Exchange model.</p>
 <p>MAPE is a metric that expresses the average error between predicted and actual values as a percentage, where a lower value indicates higher prediction accuracy. The MAPE for the highest (High) and lowest (Low) predicted values of the USD exchange rate during January 2025 was calculated, and the ranking was based on these values.</p>
-
 <h4>USD Currency</h4>
 <p>The table below shows the ranking determined by calculating the MAPE for the USD exchange rate predictions.</p>
 <ul>
